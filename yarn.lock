@@ -11695,9 +11695,9 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-"pancakes-sdk@https://github.com/CoTraderCore/CoTrader-DEX-SDK-buld-main":
+"pancakes-sdk@https://github.com/CoTraderCore/STAKE-SDK-BUILD-POLY":
   version "1.0.1"
-  resolved "https://github.com/CoTraderCore/CoTrader-DEX-SDK-buld-main#199abb18407fc55ca55340f99893f43b76d21764"
+  resolved "https://github.com/CoTraderCore/STAKE-SDK-BUILD-POLY#a665c8c48b93ea6312a14fb42824b593b982f892"
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"

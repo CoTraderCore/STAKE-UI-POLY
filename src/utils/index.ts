@@ -18,8 +18,8 @@ export function isAddress(value: any): string | false {
 }
 
 const BSCSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  56: '',
-  97: 'testnet.'
+  137: '',
+  42: 'testnet.'
 }
 
 export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
@@ -83,7 +83,7 @@ export function getContract(address: string, ABI: any, library: Web3Provider, ac
   if (!isAddress(address) || address === AddressZero) {
     throw Error(`Invalid 'address' parameter '${address}'.`)
   }
-  
+
   return new Contract(address, ABI, getProviderOrSigner(library, account) as any)
 }
 
