@@ -68,7 +68,7 @@ const Deposit = () => {
     web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:3000'))
   }
 
-  const inputCurrency = useCurrency('BNB')
+  const inputCurrency = useCurrency('MATIC')
   const addTransaction = useTransactionAdder()
   const { account } = useActiveWeb3React()
   const contract = useDepositerContract(AddressDepositor)
@@ -433,8 +433,8 @@ const Deposit = () => {
               <CurrencyInputPanel
                 label={
                   independentField === Field.OUTPUT && !showWrap && trade
-                    ? TranslateString(194, 'BNB Amount (estimated)')
-                    : TranslateString(76, 'BNB Amount')
+                    ? TranslateString(194, 'MATIC Amount (estimated)')
+                    : TranslateString(76, 'MATIC Amount')
                 }
                 value={typedValue}
                 isDeposit
@@ -536,7 +536,7 @@ const Deposit = () => {
          ?
          (
            <GreyCard style={{ textAlign: 'center' }}>
-             <Text mb="4px">{TranslateString(1194, `1 COT = ${Number(CotToBnb).toFixed(8)} BNB`)}</Text>
+             <Text mb="4px">{TranslateString(1194, `1 COT = ${Number(CotToBnb).toFixed(8)} MATIC`)}</Text>
            </GreyCard>
          )
          :
@@ -558,8 +558,8 @@ const Deposit = () => {
       </AppBody>
       <MouseoverTooltip text={
         `
-        1. Converts BNB to COT from Pancake
-        2. Stake COTBNB LP pool COS-v2
+        1. Converts MATIC to COT from Pancake
+        2. Stake COTMATIC LP pool UNI-v2
         `
       }>
         <Text mb="4px">How this works <strong>?</strong></Text>
