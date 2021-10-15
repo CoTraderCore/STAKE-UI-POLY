@@ -68,7 +68,7 @@ const Deposit = () => {
     web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:3000'))
   }
 
-  const inputCurrency = useCurrency('MATIC')
+  const inputCurrency = useCurrency('BNB')
   const addTransaction = useTransactionAdder()
   const { account } = useActiveWeb3React()
   const contract = useDepositerContract(AddressDepositor)
